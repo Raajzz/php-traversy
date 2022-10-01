@@ -22,3 +22,24 @@
 - Variables can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - Variables are case-sensitive ($name and $NAME are two different variables)
 */
+
+$name = "fritz";
+$age = 19;
+$likes_js = true;
+
+// var_dump($likes_js); // bool(true)
+// echo $likes_js; // prints 1
+// var_export($likes_js); // prints true
+
+// printing with variables
+
+// echo $name . ' ' . $age . ' ' . $likes_js; fritz 19 1
+// echo "${name} ${age} ${likes_js}"; // string concatenation
+
+// var_dump("$name $age $likes_js"); // works, so concatenation is independent of the print statement
+
+echo 1 + 2; // 3
+echo '1' + '2'; // also 3
+echo "1" + "2";
+
+?>
