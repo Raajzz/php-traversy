@@ -11,6 +11,11 @@
   }
 */
 
+$i = 0;
+
+for (; $i < 10; $i++) { 
+  echo "Number ${i}" . "<br>";
+}
 
 /* ------------ While Loop ------------ */
 
@@ -20,6 +25,11 @@
   // code to be executed
   }
 */
+
+while($i < 20){
+  echo "Number ${i}" . "<br>";
+  $i++;
+}
 
 
 /* ---------- Do While Loop --------- */
@@ -33,7 +43,10 @@
 do...while loop will always execute the block of code once, even if the condition is false.
 */
 
-
+do{
+  echo "Number ${i}" . "<br>";
+  $i++;
+} while($i < 30);
 
 /* ---------- Foreach Loop ---------- */
 
@@ -43,3 +56,14 @@ do...while loop will always execute the block of code once, even if the conditio
   // code to be executed
   }
 */
+
+$arr = [
+  "Raaj" => "Rock",
+  "Nishant" => "EDM",
+  "Kathi" => "Pop",
+  "Vidyarth" => "All"
+];
+
+foreach ($arr as $idx => $item){
+  echo "${idx} => ${item}" . "<br>";
+}

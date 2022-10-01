@@ -42,4 +42,9 @@ echo 1 + 2; // 3
 echo '1' + '2'; // also 3
 echo "1" + "2";
 
+define("CONSTANT", "ABCDEF");
+echo CONSTANT;
+
+// any variable that doesn't have a dollar variable would be considered as a constant
+
 ?>
