@@ -28,7 +28,38 @@
   // remove a particular element
   unset($fruits[2]); // removes the index too, therefore result will be 0 -> ... , 1 -> ... , 3 -> ... | no 2 index
 
-  print_r($fruits);
+  array_push($fruits, "banana");
+  array_push($fruits, "pineapple");
+  // split into chunks
+  $chunked_array = array_chunk($fruits, 2);
+
+  // print_r($chunked_array);
+
+  // concatenating arrays
+  $arr1 = [1, 2, 3];
+  $arr2 = [4, 5, 6];
+
+  $arr3 = array_merge($arr1, $arr2);
+  $arr4 = [...$arr1, ...$arr2];
+  // print_r($arr4);
+
+  // array_combine -> consider the first param array as keys and set the second param array as values
+
+  $a = [1, 2, 3];
+  $b = [4, 5, 6];
+
+  $c = array_combine($a, $b); 
+
+  // array_keys will return a number-indexed array with the keys as values
+  $d = array_keys($c);
+
+  // array_flip will flip the keys and the values
+  $e = array_flip($c);
+
+  // range
+  $numbers = range(1, 20);
+
+  print_r($numbers);
 
 /*
   Functions to work with arrays
