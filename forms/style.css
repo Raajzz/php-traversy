@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+body{
+  background-color: rgb(255, 0, 93);
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+hr{
+  border-top: 1px solid white;
+}
+
+h1{
+  text-align: center;
+}
+
+form{
+  padding: 10px;
+}
+
+input, select, textarea{
+  border: none;
+  border-radius: 3px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+input, select{
+  height: 30px;
+}
+
+textarea{
+  height: 100px;
+}
+
+.btn-cont{
+  width: 120px;
+  margin: 0 auto;
+}
+
+#btn{
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  font-size: 20px;
+}
+
+#btn:hover{
+  background-color: white;
+  color: rgb(255, 0, 93);
+  transition-delay: 250ms;
+  transition-timing-function: ease-in-out;
+}
