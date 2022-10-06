@@ -4,9 +4,12 @@
   Built in variables that are always available in all scopes
 */
 
+print_r($_SERVER);
+
+
 /*
   $GLOBALS - A superglobal variable that holds information about any variables in global scope.
-  $_GET - Contains information about variables passed through a URL or a form.
+  $_GET - Contains information about variables passed through a URL or a form. 
   $_POST -  Contains information about variables passed through a form.
   $_COOKIE - Contains information about variables passed through a cookie.
   $_SESSION - Contains information about variables passed through a session.
