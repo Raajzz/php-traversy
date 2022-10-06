@@ -59,8 +59,27 @@
   // range
   $numbers = range(1, 20);
 
-  print_r($numbers);
+  // print_r($numbers);
 
+  $new_numbers = array_map(function($number){
+    return "Number ${number}";
+  }, $numbers);
+
+  // print_r($new_numbers);
+
+  $filtered_arr = array_filter($numbers, function($number){
+    return $number <= 10;
+  });
+
+  // print_r($filtered_arr);
+
+  $sum = array_reduce($numbers, function($carry, $number){
+    echo "${carry} ${number} <br>";
+    return $carry + $number; // this value will go and sit inside the $carray and $number will be the elements of the array
+  });
+
+  var_dump($sum);
+  
 /*
   Functions to work with arrays
   https://www.php.net/manual/en/ref.array.php
